@@ -1,0 +1,103 @@
+@charset  'UTF-8';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding: 10px;
+    flex-flow: column nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightcoral;
+}
+
+#informacões-pessoais {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+#explicacao {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+#input-explicacao {
+    gap: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#contatos {
+    margin-top: 10px;
+}
+
+#contatos-email {
+    margin-top: -8px;
+}
+
+#resumo {
+    text-align: center;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+#indicador {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+#input-indicador {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+#experiencia-profissionais {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#area-data {
+    margin-top: 10px;
+}
+
+#area-data-fim {
+    margin-top: -8px;
+}
+
+.textarea-informacoes-adicionais {
+    height: 50px;
+}
+
+p {
+    width: 300px;
+}
+
+.experiencia-1 {
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    padding: 10px;
+}
+
