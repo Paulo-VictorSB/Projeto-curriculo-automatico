@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: lightblue;
+    background: linear-gradient(to bottom, aliceblue, rgb(172, 172, 255));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +19,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightcoral;
+    background-color: white;
 }
 
 #informacões-pessoais {
@@ -101,3 +101,15 @@ p {
     padding: 10px;
 }
 
+#gerar-curriculo {
+    width: 330px;
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+
+#gerar-curriculo:hover {
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+
+}
