@@ -3,124 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo Automatico</title>
-    <!-- Css -->
+    <title>Currículo Automático</title>
     <link rel="stylesheet" href="assets/sass/style-principal.css">
 </head>
 <body>
-    
     <main>
-        <section id="informacões-pessoais">
+        <section id="informacoes-pessoais">
             <article id="explicacao">
                 <label for="nome-completo">Nome completo:</label>
                 <label for="endereco">Endereço:</label>
-                <label for="contatos" id="contatos">Contatos:</label>
+                <label for="contatos">Contatos:</label>
             </article>
             <article id="input-explicacao">
                 <input type="text" name="nome-completo" id="nome-completo">
                 <input type="text" name="endereco" id="endereco">
-                <input type="text" name="contato-numero" id="contato-numero" placeholder="Número">
+                <input type="text" name="contato-numero" id="contato-numero" placeholder="Número de telefone">
                 <input type="text" name="contato-email" id="contatos-email" placeholder="Email principal">
             </article>
         </section>
         <section id="resumo">
             <h1>Resumo</h1>
-            <textarea name="" id="area-texto"></textarea>
+            <textarea id="area-texto"></textarea>
         </section>
-        <h2>Experiencias</h2>
-        <section class="experiencia-1">
-            <h3>Experiencia 1</h3>
-            <section id="experiencia-profissionais">
-                <article id="indicador">
-                    <label for="area-empresa">Nome da empresa:</label>
-                    <label for="area-cargo">Cargo:</label>
-                    <label for="area-data" id="area-data">Data de atuação:</label>
-                </article>
-                <article id="input-indicador">
-                    <input type="text" name="area-empresa" id="area-empresa">
-                    <input type="text" name="area-cargo" id="area-cargo">
-                    <input type="text" name="area-data" id="area-data-inicio" placeholder="Data de ínicio">
-                    <input type="text" name="area-data" id="area-data-fim" placeholder="Data do fim">
-                </article>
+        <h2>Experiências</h2>
+        <div class="experiencias">
+            <section class="experiencia">
+                <h3>Experiência 1</h3>
+                <section class="experiencia-profissionais">
+                    <article class="indicador">
+                        <label for="empresa-1">Nome da empresa:</label>
+                        <label for="cargo-1">Cargo:</label>
+                        <label for="data-1">Data de atuação:</label>
+                    </article>
+                    <article class="input-indicador">
+                        <input type="text" id="empresa-1">
+                        <input type="text" id="cargo-1">
+                        <input type="text" id="inicio-1" placeholder="Data de início dd/mm/yy">
+                        <input type="text" id="fim-1" placeholder="Data do fim">
+                    </article>
+                </section>
+                <p>Cite coisas importantes que você fez durante sua jornada:</p>
+                <textarea class="textarea-informacoes-adicionais"></textarea>
+                <textarea class="textarea-informacoes-adicionais"></textarea>
+                <textarea class="textarea-informacoes-adicionais"></textarea>
             </section>
-            <br>
-            <p>Cite coisas importantes que você fez durante sua jornada:</p>
-            <br>
-            <textarea name="" id="textarea-informacao-1" class="textarea-informacoes-adicionais"></textarea>
-            <textarea name="" id="textarea-informacao-2" class="textarea-informacoes-adicionais"></textarea>
-            <textarea name="" id="textarea-informacao-3" class="textarea-informacoes-adicionais"></textarea>
-        </section>
-        <section class="experiencia-1">
-            <h3>Experiencia 2</h3>
-            <section id="experiencia-profissionais">
-                <article id="indicador">
-                    <label for="area-empresa">Nome da empresa:</label>
-                    <label for="area-cargo">Cargo:</label>
-                    <label for="area-data" id="area-data">Data de atuação:</label>
-                </article>
-                <article id="input-indicador">
-                    <input type="text" name="area-empresa" id="area-empresa">
-                    <input type="text" name="area-cargo" id="area-cargo">
-                    <input type="text" name="area-data" id="area-data-inicio" placeholder="Data de ínicio">
-                    <input type="text" name="area-data" id="area-data-fim" placeholder="Data do fim">
-                </article>
+            <section class="experiencia">
+                <h3>Experiência 2</h3>
+                <section class="experiencia-profissionais">
+                    <article class="indicador">
+                        <label for="empresa-2">Nome da empresa:</label>
+                        <label for="cargo-2">Cargo:</label>
+                        <label for="data-2">Data de atuação:</label>
+                    </article>
+                    <article class="input-indicador">
+                        <input type="text" id="empresa-2">
+                        <input type="text" id="cargo-2">
+                        <input type="text" id="inicio-2" placeholder="Data de início">
+                        <input type="text" id="fim-2" placeholder="Data do fim">
+                    </article>
+                </section>
+                <p>Cite coisas importantes que você fez durante sua jornada:</p>
+                <textarea class="textarea-informacoes-adicionais"></textarea>
+                <textarea class="textarea-informacoes-adicionais"></textarea>
+                <textarea class="textarea-informacoes-adicionais"></textarea>
             </section>
-            <br>
-            <p>Cite coisas importantes que você fez durante sua jornada:</p>
-            <br>
-            <textarea name="" id="textarea-informacao-1" class="textarea-informacoes-adicionais"></textarea>
-            <textarea name="" id="textarea-informacao-2" class="textarea-informacoes-adicionais"></textarea>
-            <textarea name="" id="textarea-informacao-3" class="textarea-informacoes-adicionais"></textarea>
-        </section>
+        </div>
         <h2>Formação</h2>
-        <section class="experiencia-1">
-            <h3>Formação 1</h3>
-            <section id="experiencia-profissionais">
-                <article id="indicador">
-                    <label for="area-empresa">Nome da empresa:</label>
-                    <label for="area-cargo">Cargo:</label>
-                    <label for="area-data" id="area-data">Data de atuação:</label>
-                </article>
-                <article id="input-indicador">
-                    <input type="text" name="area-empresa" id="area-empresa">
-                    <input type="text" name="area-cargo" id="area-cargo">
-                    <input type="text" name="area-data" id="area-data-inicio" placeholder="Data de ínicio">
-                    <input type="text" name="area-data" id="area-data-fim" placeholder="Data do fim">
-                </article>
+        <div class="formacoes">
+            <section class="formacao">
+                <h3>Formação 1</h3>
+                <section class="experiencia-profissionais">
+                    <article class="indicador">
+                        <label for="instituicao-1">Nome da instituição:</label>
+                        <label for="curso-1">Curso:</label>
+                        <label for="periodo-1">Período:</label>
+                    </article>
+                    <article class="input-indicador">
+                        <input type="text" id="instituicao-1">
+                        <input type="text" id="curso-1">
+                        <input type="text" id="inicio-curso-1" placeholder="Data de início">
+                        <input type="text" id="fim-curso-1" placeholder="Data do fim">
+                    </article>
+                </section>
+                <p>Cite coisas importantes que você fez durante sua jornada:</p>
+                <textarea class="textarea-informacoes-adicionais"></textarea>
+                <textarea class="textarea-informacoes-adicionais"></textarea>
+                <textarea class="textarea-informacoes-adicionais"></textarea>
             </section>
-            <br>
-            <p>Cite coisas importantes que você fez durante sua jornada:</p>
-            <br>
-            <textarea name="" id="textarea-informacao-1" class="textarea-informacoes-adicionais"></textarea>
-            <textarea name="" id="textarea-informacao-2" class="textarea-informacoes-adicionais"></textarea>
-            <textarea name="" id="textarea-informacao-3" class="textarea-informacoes-adicionais"></textarea>
-        </section>
-        <section class="experiencia-1">
-            <h3>Formação 2</h3>
-            <section id="experiencia-profissionais">
-                <article id="indicador">
-                    <label for="area-empresa">Nome da empresa:</label>
-                    <label for="area-cargo">Cargo:</label>
-                    <label for="area-data" id="area-data">Data de atuação:</label>
-                </article>
-                <article id="input-indicador">
-                    <input type="text" name="area-empresa" id="area-empresa">
-                    <input type="text" name="area-cargo" id="area-cargo">
-                    <input type="text" name="area-data" id="area-data-inicio" placeholder="Data de ínicio">
-                    <input type="text" name="area-data" id="area-data-fim" placeholder="Data do fim">
-                </article>
+            <section class="formacao">
+                <h3>Formação 2</h3>
+                <section class="experiencia-profissionais">
+                    <article class="indicador">
+                        <label for="instituicao-2">Nome da instituição:</label>
+                        <label for="curso-2">Curso:</label>
+                        <label for="periodo-2">Período:</label>
+                    </article>
+                    <article class="input-indicador">
+                        <input type="text" id="instituicao-2">
+                        <input type="text" id="curso-2">
+                        <input type="text" id="inicio-curso-2" placeholder="Data de início">
+                        <input type="text" id="fim-curso-2" placeholder="Data do fim">
+                    </article>
+                </section>
+                <p>Cite coisas importantes que você fez durante sua jornada:</p>
+                <textarea class="textarea-informacoes-adicionais"></textarea>
+                <textarea class="textarea-informacoes-adicionais"></textarea>
+                <textarea class="textarea-informacoes-adicionais"></textarea>
             </section>
-            <br>
-            <p>Cite coisas importantes que você fez durante sua jornada:</p>
-            <br>
-            <textarea name="" id="textarea-informacao-1" class="textarea-informacoes-adicionais"></textarea>
-            <textarea name="" id="textarea-informacao-2" class="textarea-informacoes-adicionais"></textarea>
-            <textarea name="" id="textarea-informacao-3" class="textarea-informacoes-adicionais"></textarea>
-        </section>
-        <br>
-        <a href="assets/pages/curriculo.html"><button id="gerar-curriculo">Gerar Cúrriculo</button></a>
-        
+        </div>
+        <a href="assets/pages/curriculo.html">
+            <button id="gerar-curriculo" onclick="gerarCurriculo()">Gerar Currículo</button>
+        </a>
     </main>
-
+    <script src="assets/js/app.js"></script>
 </body>
 </html>

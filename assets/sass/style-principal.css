@@ -1,4 +1,4 @@
-@charset  'UTF-8';
+@charset 'UTF-8';
 
 * {
     padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, aliceblue, rgb(172, 172, 255));
+    background: linear-gradient(to bottom, aliceblue, rgb(225, 225, 255));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,29 +15,22 @@ body {
 
 main {
     padding: 10px;
-    flex-flow: column nowrap;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: white;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.185);
 }
 
-#informacões-pessoais {
+#informacoes-pessoais {
     display: flex;
-    flex-flow: row nowrap;
     gap: 20px;
 }
 
-#explicacao {
+#explicacao, #input-explicacao, .indicador, .input-indicador {
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     gap: 10px;
-}
-
-#input-explicacao {
-    gap: 10px;
-    display: flex;
-    flex-flow: column nowrap;
 }
 
 #contatos {
@@ -57,48 +50,26 @@ textarea {
     height: 100px;
 }
 
-#indicador {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 10px;
-}
-
-#input-indicador {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 10px;
-}
-
-#experiencia-profissionais {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-#area-data {
-    margin-top: 10px;
-}
-
-#area-data-fim {
-    margin-top: -8px;
-}
-
-.textarea-informacoes-adicionais {
-    height: 50px;
-}
-
-p {
-    width: 300px;
-}
-
-.experiencia-1 {
+.experiencia, .formacao {
     margin-top: 5px;
     border: 1px solid black;
     border-radius: 2px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-flow: column nowrap;
     padding: 10px;
+    width: 340px;
+    text-align: justify;
+}
+
+.experiencia-profissionais {
+    display: flex;
+    gap: 20px;
+}
+
+.textarea-informacoes-adicionais {
+    width: 300px;
+    height: 50px;
 }
 
 #gerar-curriculo {
@@ -106,10 +77,10 @@ p {
     height: 40px;
     border: none;
     background-color: white;
+    margin-top: 20px;
 }
 
 #gerar-curriculo:hover {
     cursor: pointer;
     background-color: rgb(238, 238, 238);
-
 }
