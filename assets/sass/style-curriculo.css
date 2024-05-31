@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* Seletor Universal */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    font-weight: normal;
+}
+
+/* Corpo | Fundo */
+
+body {
+    background-color: lightgray;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+/* Main | Área Currículo */
+
+main {
+    width: 40%;
+    padding: 18px 20px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.171); 
+}
+
+/* Dados Pessoais */
+
+#dados-pessoais {
+    gap: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 10px;
+}
+
+#dados-pessoais a {
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+}
+
+/* Resumo */
+
+#resumo p {
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+/* Experiencias Profissionais */
+
+#experiencias-profissionais {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+#experiencias-profissionais hr {
+    margin-top: -5px;
+}
+
+#experiencias-profissionais ul {
+    margin-left: 40px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Formacoes academicas */
+
+#formacoes-academicas {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+#formacoes-academicas hr {
+    margin-top: -5px;
+}
+
+#formacoes-academicas ul {
+    margin-left: 40px;
+    text-align: left;
+}
+
+#baixar-pdf {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+#baixar-pdf:hover {
+    cursor: pointer;
+    background-color: rgb(37, 37, 37);
+    transition: 0.5s;
+}
+
+.descricao {
+    margin-left: 25px;
+}

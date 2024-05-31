@@ -11,14 +11,16 @@
         <section id="informacoes-pessoais">
             <article id="explicacao">
                 <label for="nome-completo">Nome completo:</label>
+                <label for="linkedin">Linkedin:</label>
                 <label for="endereco">Endereço:</label>
                 <label for="contatos">Contatos:</label>
             </article>
             <article id="input-explicacao">
                 <input type="text" name="nome-completo" id="nome-completo">
+                <input type="text" name="linkedin" id="linkedin">
                 <input type="text" name="endereco" id="endereco">
-                <input type="text" name="contato-numero" id="contato-numero" placeholder="Número de telefone">
-                <input type="text" name="contato-email" id="contatos-email" placeholder="Email principal">
+                <input type="text" name="contato-numero" id="contato-numero" placeholder="(xx) xxxxx-xxxx">
+                <input type="text" name="contato-email" id="contato-email" placeholder="Email principal">
             </article>
         </section>
         <section id="resumo">
@@ -33,19 +35,21 @@
                     <article class="indicador">
                         <label for="empresa-1">Nome da empresa:</label>
                         <label for="cargo-1">Cargo:</label>
+                        <label for="ramo-1">Ramo: </label>
                         <label for="data-1">Data de atuação:</label>
                     </article>
                     <article class="input-indicador">
                         <input type="text" id="empresa-1">
                         <input type="text" id="cargo-1">
-                        <input type="text" id="inicio-1" placeholder="Data de início dd/mm/yy">
-                        <input type="text" id="fim-1" placeholder="Data do fim">
+                        <input type="text" id="ramo-1">
+                        <input type="text" id="inicio-1" placeholder="Data de início DD/MM/YY">
+                        <input type="text" id="fim-1" placeholder="Data do fim DD/MM/YY">
                     </article>
                 </section>
                 <p>Cite coisas importantes que você fez durante sua jornada:</p>
-                <textarea class="textarea-informacoes-adicionais"></textarea>
-                <textarea class="textarea-informacoes-adicionais"></textarea>
-                <textarea class="textarea-informacoes-adicionais"></textarea>
+                <textarea class="textarea-informacoes-adicionais" id="li-1-1"></textarea>
+                <textarea class="textarea-informacoes-adicionais" id="li-1-2"></textarea>
+                <textarea class="textarea-informacoes-adicionais" id="li-1-3"></textarea>
             </section>
             <section class="experiencia">
                 <h3>Experiência 2</h3>
@@ -53,19 +57,21 @@
                     <article class="indicador">
                         <label for="empresa-2">Nome da empresa:</label>
                         <label for="cargo-2">Cargo:</label>
+                        <label for="ramo-2">Ramo: </label>
                         <label for="data-2">Data de atuação:</label>
                     </article>
                     <article class="input-indicador">
                         <input type="text" id="empresa-2">
                         <input type="text" id="cargo-2">
-                        <input type="text" id="inicio-2" placeholder="Data de início">
-                        <input type="text" id="fim-2" placeholder="Data do fim">
+                        <input type="text" id="ramo-2">
+                        <input type="text" id="inicio-2" placeholder="Data de início DD/MM/YY">
+                        <input type="text" id="fim-2" placeholder="Data do fim DD/MM/YY">
                     </article>
                 </section>
                 <p>Cite coisas importantes que você fez durante sua jornada:</p>
-                <textarea class="textarea-informacoes-adicionais"></textarea>
-                <textarea class="textarea-informacoes-adicionais"></textarea>
-                <textarea class="textarea-informacoes-adicionais"></textarea>
+                <textarea class="textarea-informacoes-adicionais" id="li-2-1"></textarea>
+                <textarea class="textarea-informacoes-adicionais" id="li-2-2"></textarea>
+                <textarea class="textarea-informacoes-adicionais" id="li-2-3"></textarea>
             </section>
         </div>
         <h2>Formação</h2>
@@ -81,14 +87,12 @@
                     <article class="input-indicador">
                         <input type="text" id="instituicao-1">
                         <input type="text" id="curso-1">
-                        <input type="text" id="inicio-curso-1" placeholder="Data de início">
-                        <input type="text" id="fim-curso-1" placeholder="Data do fim">
+                        <input type="text" id="inicio-curso-1" placeholder="Data de início DD/MM/YY">
+                        <input type="text" id="fim-curso-1" placeholder="Data do fim DD/MM/YY">
                     </article>
                 </section>
-                <p>Cite coisas importantes que você fez durante sua jornada:</p>
-                <textarea class="textarea-informacoes-adicionais"></textarea>
-                <textarea class="textarea-informacoes-adicionais"></textarea>
-                <textarea class="textarea-informacoes-adicionais"></textarea>
+                <p>Breve descrição do curso:</p>
+                <textarea class="textarea-informacoes-adicionais" id="descricao-1"></textarea>
             </section>
             <section class="formacao">
                 <h3>Formação 2</h3>
@@ -101,14 +105,12 @@
                     <article class="input-indicador">
                         <input type="text" id="instituicao-2">
                         <input type="text" id="curso-2">
-                        <input type="text" id="inicio-curso-2" placeholder="Data de início">
-                        <input type="text" id="fim-curso-2" placeholder="Data do fim">
+                        <input type="text" id="inicio-curso-2" placeholder="Data de início DD/MM/YY">
+                        <input type="text" id="fim-curso-2" placeholder="Data do fim DD/MM/YY">
                     </article>
                 </section>
-                <p>Cite coisas importantes que você fez durante sua jornada:</p>
-                <textarea class="textarea-informacoes-adicionais"></textarea>
-                <textarea class="textarea-informacoes-adicionais"></textarea>
-                <textarea class="textarea-informacoes-adicionais"></textarea>
+                <p>Breve descrição do curso:</p>
+                <textarea class="textarea-informacoes-adicionais" id="descricao-2"></textarea>
             </section>
         </div>
         <a href="assets/pages/curriculo.html">

@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currículo Automático</title>
+    <link rel="stylesheet" href="../sass/style-curriculo.css">
 </head>
 <body>
-    <p id="nomeCompleto"></p>
+    <main>
+        <section id="dados-pessoais">
+            <h1 id="nomeCompleto"></h1>
+            <h3 id="linkedin"></h3>
+            <h3 id="endereco"></h3>
+            <h3>Contatos: <span id="contatoNumero"></span> | <span id="contatoEmail"></span></h3>
+        </section>
+        <section id="resumo1">
+            <h2>Resumo</h2>
+            <hr>
+            <p id="resumo"></p>
+        </section>
+        <section id="experiencias-profissionais">
+            <h2>Experiências profissionais</h2>
+            <hr>
+            <div class="experiencia" id="experiencia-1">
+                <h3 id="empresa-1"></h3>
+                <h4>Cargo: <span id="cargo-1"></span></h4>
+                <h4>Ramo: <span id="ramo-1"></span></h4>
+                <h4 id="periodo-1"></h4>
+                <ul>
+                    <li id="li-1-1"></li>
+                    <li id="li-1-2"></li>
+                    <li id="li-1-3"></li>
+                </ul><br>
+            </div>
+            <div class="experiencia" id="experiencia-2">
+                <h3 id="empresa-2"></h3>
+                <h4>Cargo: <span id="cargo-2"></span></h4>
+                <h4>Ramo: <span id="ramo-2"></span></h4>
+                <h4 id="periodo-2"></h4>
+                <ul>
+                    <li id="li-2-1"></li>
+                    <li id="li-2-2"></li>
+                    <li id="li-2-3"></li>
+                </ul>
+                <br>
+            </div>
+        </section>
+        <section id="formacao-academica">
+            <h2>Formação Acadêmica</h2>
+            <hr>
+            <div class="formacao">
+                <h3 id="instituicao-1"></h3>
+                <h4>Curso: <span id="curso-1"></span></h4>
+                <h4 id="periodo-curso-1"></h4>
+                <p id="descricao-1" class="descricao"></p>
+            </div><br>
+            <div class="formacao">
+                <h3 id="instituicao-2"></h3>
+                <h4>Curso: <span id="curso-2"></span></h4>
+                <h4 id="periodo-curso-2"></h4>
+                <p id="descricao-2" class="descricao"></p>
+            </div>
+        </section>
+    </main>
+    <button id="baixar-pdf">Baixar PDF</button>
     <script src="../js/curriculo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+    window.onload = function () {
+        const { jsPDF } = window.jspdf;
+
+        document.getElementById('baixar-pdf').addEventListener('click', () => {
+            const element = document.querySelector('main');
+            const options = {
+                background: 'white',
+                scale: 3 // Aumenta a escala para melhorar a qualidade
+            };
+
+            html2canvas(element, options).then(canvas => {
+                const imgData = canvas.toDataURL('image/png');
+                const pdf = new jsPDF({
+                    orientation: 'portrait', // Mantém a orientação como retrato
+                    unit: 'mm',
+                    format: 'a4'
+                });
+
+                const pdfWidth = pdf.internal.pageSize.getWidth();
+                const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+                pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+                pdf.save('curriculo.pdf');
+            });
+        });
+    };
+</script>
 </body>
 </html>
